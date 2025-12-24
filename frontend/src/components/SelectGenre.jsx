@@ -1,13 +1,13 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
+import { useDispatch } from 'react-redux'
 import { fetchDataByGenre } from '../store'
 
 const SelectGenre = ({ genres, type }) => {
     const dispatch = useDispatch();
 
     return (
-        <Select className='flex' onChange={e => {
+        <Select onChange={e => {
             dispatch(fetchDataByGenre({ genre: e.target.value, type }));
         }}>
             {genres.map((genre) => (
@@ -22,9 +22,12 @@ const SelectGenre = ({ genres, type }) => {
 export default SelectGenre;
 
 const Select = styled.select`
-    margin-left: 5rem;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    border: 2px solid white;
+margin-left: 5rem;
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.4);
+border: 2px solid white;
+color: white;
+padding: 0.5rem;
 `;
+
+

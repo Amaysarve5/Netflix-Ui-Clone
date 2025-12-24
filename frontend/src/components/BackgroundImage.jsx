@@ -1,6 +1,6 @@
 import React from 'react'
-import backgroundImage from "../assets/BackgroundImage.jpg"
 import styled from 'styled-components'
+import backgroundImage from "../assets/BackgroundImage.jpg"
 
 const BackgroundImage = () => {
   return (
@@ -13,13 +13,16 @@ const BackgroundImage = () => {
 export default BackgroundImage
 
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+height: 100vh;
+width: 100vw;
+position: absolute;
+top: 0;
+left: 0;
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 `;
+
+

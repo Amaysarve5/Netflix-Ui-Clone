@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchMovies, getGenres } from '../store';
 import { firebaseAuth } from '../utils/fire-base-config';
 import Navbar from '../components/Navbar';
-import styled from 'styled-components';
 import { onAuthStateChanged } from 'firebase/auth';
 import Slider from '../components/Slider';
 import NotAvailable from '../components/NotAvailable';
@@ -46,10 +46,8 @@ const Movies = () => {
 
   return (
     <Container>
-      <div className='navbar'>
-        <Navbar isScrolled={isScrolled}/>
-      </div>
-      <div className='data'>
+      <Navbar isScrolled={isScrolled}/>
+      <div className="data">
         <SelectGenre genres={genres} type="movie"/>
         {movies.length ? <Slider movies={movies}/> : <NotAvailable />}
       </div>
@@ -57,15 +55,18 @@ const Movies = () => {
   )
 }
 
-export default Movies;
+export default Movies
 
 const Container = styled.div`
-  .data {
-    margin-top: 8rem;
-    .not-available {
-      text-align: center;
-      color: white;
-      margin-top: 4rem;
-    }
+background-color: black;
+.data{
+  margin-top: 8rem;
+  .not-available{
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
   }
+}
 `;
+
+

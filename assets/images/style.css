@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_large.jpg);
+    height: 100vh;
+    position: inherit;
+    background-position: center center;
+}
+
+.main .box{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display:  flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80vw;
+    height: 62px;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        max-width: 80vw;
+    }
+}
+
+ .img1{
+    margin-top: 20px;
+    color: rgb(255, 0, 0);
+    position: relative;
+    z-index: 10;
+ }
+
+ nav button{
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+ }
+
+.hero{
+    height: calc(100% - 72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding:0 30px;
+    flex-wrap: wrap;
+    }
+
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#time{
+    margin-bottom: 1rem;
+    font-size: 20px;  
+}
+
+.btn{
+    font-size: 14px;
+    padding: 4px 10px;
+    font-weight:  bold;
+    color: white;
+    height: 5vh;
+    width: 7vw;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-color: rgb(225, 217, 217);
+}
+
+.btn-red{
+    background-color: red;
+    border: none;
+    height: 4vh;
+    width: 5vw;
+}
+
+.red-btn{
+    background-color: red;
+    font-size: larger;
+    height: 7vh;
+    width: 12vw;
+    border: 5px solid red;
+}
+
+
+input{
+    border-radius: 5px;
+    height: 7vh;
+    width: 27vw;
+    border-color: rgba(255, 255, 255), 0.255;
+    color: azure;
+    background-color: rgba(23, 23, 23, 0.3);
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(239, 79, 79);
+    margin-top: 10px;
+}
+
+h1{
+     font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-left: 160px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.ind1{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight:  bold;
+    color: white;
+    height: 4vh;
+    width: 5vw;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-color: gray;
+    margin-left: 160px;
+}
+
+.ind2{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight:  bold;
+    color: white;
+    height: 4vh;
+    width: 5vw;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-color: rgb(225, 217, 217);
+    margin-left: 15px;
+    border-color: gray;
+}
+
+.line{
+    height: 1px;
+    background-color: red;
+    filter: blur(1.5px);
+}
+
+
+.container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    margin-left: 160px;
+    margin-right:85px;
+    /* opacity: 0.3; */
+}
+
+.movies{
+    height: 250px;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 15px;
+    background-color: rgb(221, 18, 18);
+    border-radius: 10px;
+    display: flex; 
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+.movie1{
+    margin-left: 75px;
+}
+
+.img2{
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.more{
+    margin-top: 20px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+.container-2{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box1{
+    height: 250px;
+    width: 285px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 10px;
+    flex-shrink: 0;
+    border:2px solid black;
+    /* overflow-x: hidden; */
+}
+
+.box2{
+    margin-left: 160px;
+}
+
+.h2-1{
+    color: white;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.content{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+    display: flex;
+}
+
+.computer{
+    height:60px;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.download{
+    height:60px;
+    margin-left: 200px;
+    margin-top: 28px;
+}
+
+.scope{
+    height:60px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.kid{
+    height:60px;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.h2-2{
+    margin-top: 50px;
+    margin-left: 165px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.q:hover{
+    background-color: rgb(69, 66, 66);
+}
+
+.q{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(45, 45, 45);
+    margin:10px;
+    color : white;
+    margin-left: 165px;
+    margin-right: 165px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space{
+    font-weight: 400;
+    font-size: larger;
+}
+
+footer .que{
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 165px;
+    margin-top: 50px;
+    margin-bottom: 40px;;
+}
+
+.footer{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 165px;
+}
+.footer a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eng{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size:15px;
+    font-weight: 400;
+}
+
+.net{
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 100px;
+    margin-left: -335px;
+    margin-bottom: 200px;
+}
+
+
+
+
+

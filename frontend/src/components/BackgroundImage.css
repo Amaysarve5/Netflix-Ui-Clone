@@ -1,0 +1,11 @@
+.background-image-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.background-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

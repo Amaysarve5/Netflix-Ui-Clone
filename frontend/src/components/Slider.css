@@ -1,0 +1,6 @@
+/* Slider component styles */
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,7 @@
+.select-genre {
+  margin-left: 5rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 2px solid white;
+}

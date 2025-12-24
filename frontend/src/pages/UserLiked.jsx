@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchMovies, getGenres, getUserLikedMovies } from '../store';
 import { firebaseAuth } from '../utils/fire-base-config';
 import Navbar from '../components/Navbar';
-import styled from 'styled-components';
 import { onAuthStateChanged } from 'firebase/auth';
 import Card from '../components/Card';
 
@@ -44,9 +44,9 @@ const UserLiked = () => {
   return (
     <Container>
         <Navbar isScrolled={isScrolled}/>
-        <div className="content flex column">
+        <div className="content">
             <h1>My list</h1>
-            <div className='grid flex'>
+            <div className='cards'>
                 {movies.map((movie, index)=>{
                     return <Card movieData={movie} index={index} key={movie.id} isLiked={true}/>
                 })}
@@ -59,17 +59,21 @@ const UserLiked = () => {
 export default UserLiked
 
 const Container = styled.div`
-    .content{
-    margin: 2.3rem;
-    margin-top: 8rem;
-    gap: 3rem;
-    h1{
-      margin-left: 3rem;
-    }
-      .grid{
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-    }
-    
+background-color: black;
+.content{
+  margin: 2rem;
+  margin-top: 8rem;
+  h1{
+    color: white;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+}
 `;
+
